@@ -1,0 +1,2 @@
+# JS-Solutions
+Just exercises
