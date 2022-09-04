@@ -82,7 +82,6 @@ const language = "Spanish";
 console.log(
   `${country} is in ${continent}, and its ${population} million people speak ${language}.`
 );
-*/
 
 // Coding Challenge #2
 
@@ -119,3 +118,99 @@ if (johnBMI2 > markBMI2) {
 }
 
 console.log(message);
+
+// 22 Equality operators
+let numNeighbours = Number(
+  prompt(`How many neighbour countries does your country have?`)
+);
+
+if (numNeighbours === 1) {
+  console.log(`Only 1 border`);
+} else if (numNeighbours > 1) {
+  console.log(`More than 1 border`);
+} else {
+  console.log(`No borders`);
+}
+
+//24 Logical operators
+let country = prompt(`Enter your country: `);
+let language = prompt(`Enter the language: `);
+let population = Number(prompt(`How many people live on this country: `));
+//let isIsland = prompt(`It is an island?`);
+
+console.log(language === "english");
+console.log(population < 50);
+//console.log(isIsland === "no");
+
+//console.log(!isIsland);
+let isIsland = true;
+console.log(language === "english" && population < 50 && !isIsland);
+
+if (language === "english" && population < 50 && !isIsland) {
+  console.log(`You should live in ${country} :)`);
+} else {
+  console.log(`${country} does not meet your criteria :(`);
+}
+
+// Coding challenge #3
+let avgDolphins = (96 + 108 + 89) / 3;
+//let avgKoalas = (88 + 91 + 110) / 3;
+//let avgDolphins = (97 + 112 + 101) / 3;
+//let avgKoalas = (109 + 95 + 123) / 3;
+//let avgDolphins = (97 + 112 + 101) / 3;
+let avgKoalas = (109 + 95 + 106) / 3;
+console.log(avgDolphins, avgKoalas);
+
+if (avgDolphins > avgKoalas && avgKoalas < 100) {
+  console.log(`Dolphins is the winner!`);
+} else if (avgKoalas > avgDolphins && avgDolphins < 100) {
+  console.log(`Koalas is the winner!`);
+} else if (
+  avgDolphins === avgKoalas &&
+  avgDolphins >= 100 &&
+  avgKoalas >= 100
+) {
+  console.log(`Is a draw`);
+} else {
+  console.log(`Nobody won`);
+}
+
+// 26 Switch Statement
+const language = "hindi";
+
+switch (language) {
+  case "mandarin":
+    console.log(`MOST number of native speakers!`);
+    break;
+  case "spanish":
+    console.log(`2nd place in number of native speakers`);
+    break;
+  case "english":
+    console.log(`3rd place`);
+    break;
+  case "hindi":
+    console.log(`Number 4`);
+    break;
+  default:
+    console.log(`Great language too :D`);
+}
+*/
+
+// 27 Statements and Expressions
+// See video but mostly informational.
+
+// 28 the Conditional (Ternary) Operator
+// const population = 21;
+
+// message =
+//   population > 33
+//     ? `Portugal's population is above average`
+//     : `Portugal's population is below average`;
+// console.log(message);
+
+const country = prompt("Enter your country: ");
+const population = Number(prompt("Enter the number of population"));
+
+console.log(
+  `${country}'s population is ${population > 33 ? "above" : "below"} average.`
+);
